@@ -1,0 +1,34 @@
+#include <bits/stdc++.h>
+using namespace std;
+class Employee{
+    int id;
+    
+    static int count;
+
+    public:
+        void setData(void){
+            cout<<"Enter ID "<<endl;
+            cin>>id;
+            count++;
+        }
+        void getData(void){
+            
+            cout<<"ID is "<<id<<" and this is employee number "<<count<<endl;
+        }
+        
+
+};
+
+int Employee :: count;
+
+int main(){
+    Employee sahil, prathamesh, pritish;
+    sahil.setData();
+    sahil.getData();
+    pritish.setData();
+    pritish.getData();
+    prathamesh.setData();
+    prathamesh.getData();
+
+    return 0;
+}
